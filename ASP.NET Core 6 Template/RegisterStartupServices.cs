@@ -1,0 +1,13 @@
+﻿namespace ASP.NET_Core_6_Template
+{
+    public static class RegisterStartupServices
+    {
+        public static WebApplicationBuilder RegisterServices(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+            return builder;
+        }
+    }
+}
